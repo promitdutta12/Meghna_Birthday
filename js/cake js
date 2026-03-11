@@ -1,0 +1,35 @@
+let cuts=0
+
+function blow(){
+document.getElementById("candle").innerHTML="💨"
+document.getElementById("msg").innerHTML="Now cut the cake 🎂"
+}
+
+function cutCake(){
+
+cuts++
+
+if(cuts==1)
+document.getElementById("msg").innerHTML="Nice slice ❤️"
+
+if(cuts==2)
+document.getElementById("msg").innerHTML="Keep cutting 😋"
+
+if(cuts==3)
+document.getElementById("msg").innerHTML="Almost done!"
+
+if(cuts==4){
+
+document.getElementById("msg").innerHTML="Cake finished!"
+
+setTimeout(()=>{
+window.location="world.html"
+},2000)
+
+}
+
+}
+
+function prev(){
+window.location="index.html"
+}
